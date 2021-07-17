@@ -161,16 +161,15 @@
             <!--Map Outer-->
             <div class="map-outer">
                 <!--Map Canvas-->
-                <div class="map-canvas"
-                     data-zoom="10"
-                     data-lat="23.798914766489954",
-                     data-lng=" 90.40298054023401"
-                     data-type="roadmap"
-                     data-hue="#ffc400"
-                     data-title="{{$rows->name}}"
-                     data-icon-path="{{url("public/images/icons/map-marker.png")}}"
-                     data-content="{{$rows->address}}<br><a href='mailto:{{$rows->email}}'>{{$rows->email}}</a>">
-                </div>
+                <iframe
+				  width="100%"
+				  height="600"
+				  style="border:0"
+				  loading="lazy"
+				  allowfullscreen
+				  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOc0-5SE59M8qVpKbDKPPt7bda9xiOEaE
+					&q=Sobuj Bari">
+				</iframe>
             </div>
         </div>
         <!--Map Section-->
