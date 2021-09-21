@@ -204,10 +204,12 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">Website Management</li>
+                <li class="@yield('project_name')"><a href ="{{ url('project_name') }}" ><i class="fa fa-umbrella"></i><span>Project</span></a></li>
+                <li class="@yield('m_acc')"><a href ="{{ url('m_acc') }}" ><i class="fa fa-address-book"></i> <span>Accounts</span></a></li>
                 <li class="@yield('home')"><a href ="{{ url('home') }}" ><i class="fa fa-address-book"></i> <span>Company Info Management</span></a></li>
                 <li class="@yield('mainSlide')"><a href ="{{ url('mainSlide') }}" ><i class="fa fa-image"></i> <span>Slide Management</span></a></li>
                 <li class="@yield('servicesAdmin')"><a href ="{{ url('servicesAdmin') }}" ><i class="fa fa-medkit"></i> <span>Service Management</span></a></li>
-                <li class="@yield('projects')"><a href ="{{ url('projects') }}" ><i class="fa fa-gear"></i> <span>Project Management</span></a></li>
+                <li class="@yield('projects')"><a href ="{{ url('projects') }}" ><i class="fa fa-gear"></i> <span>Product Management</span></a></li>
                 <li class="@yield('clients')"><a href ="{{ url('clients') }}" ><i class="fa fa-clipboard"></i> <span>Client Management</span></a></li>
                 <li class="@yield('users')"><a href ="{{ url('users') }}" ><i class="fa fa-user"></i> <span>Users Management</span></a></li>
                 <li class="@yield('receivedEmail')"><a href ="{{ url('receivedEmail') }}" ><i class="fa fa-envelope"></i> <span>Received Email</span></a></li>

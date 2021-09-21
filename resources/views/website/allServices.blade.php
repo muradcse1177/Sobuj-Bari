@@ -1,5 +1,5 @@
 @extends('website.layout')
-@section('title', 'Project-Details')
+@section('title', 'All Services|| Sobuj Bari')
 @section('as', 'current')
 @section('content')
 
@@ -81,7 +81,7 @@
             </div>
         </div>
         <!--Map Section-->
-        <div class="auto-container">
+        <div class="auto-container" style="background-image:url(public/images/background/1.jpg)">
             <div class="inner-container">
                 <div class="row clearfix">
                     <!--Info Column-->

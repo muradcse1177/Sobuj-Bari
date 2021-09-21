@@ -1,5 +1,5 @@
 @extends('website.layout')
-@section('title', 'Project-Details')
+@section('title', 'Contact Us || Sobuj Bari')
 @section('cu', 'current')
 @section('content')
 

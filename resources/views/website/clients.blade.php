@@ -1,5 +1,5 @@
 @extends('website.layout')
-@section('title', 'Home')
+@section('title', 'Clients|| Sobuj Bari')
 @section('cl', 'current')
 @section('content')
     @php
@@ -33,7 +33,7 @@
                 @endphp
                 @foreach($clients as $client)
                     <div class="col-sm-3" style="margin-bottom: 10px;">
-                        <div class="card text-center" style="width: 25rem; border: 3px solid darkgreen;">
+                        <div class="card text-center" style="width: 100%; border: 3px solid darkgreen;">
                             <img class="card-img-top" src="{{url('public/images/'.$client->photo)}}" alt="Card image cap" >
                             <div class="card-body" style=" border-top: 3px solid darkgreen;">
                                 <p class="card-text" style="color: black; font-size: 20px;"><b>{{$client->name}}</b></p>
@@ -53,7 +53,7 @@
                 <!--Map Canvas-->
                 <iframe
 				  width="100%"
-				  height="600"
+				  height="550"
 				  style="border:0"
 				  loading="lazy"
 				  allowfullscreen
@@ -63,7 +63,7 @@
             </div>
         </div>
         <!--Map Section-->
-        <div class="auto-container">
+        <div class="auto-container" style="background-image:url(public/images/background/1.jpg)">
             <div class="inner-container">
                 <div class="row clearfix">
                     <!--Info Column-->

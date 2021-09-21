@@ -227,7 +227,7 @@
     <section>
         @yield('content')
     </section>
-    <footer class="main-footer" style="background-image:url(images/background/3.jpg)">
+    <footer class="main-footer" style="background-image:url(public/images/background/3.jpg)">
         <div class="auto-container">
 
             <!--Widgets Section-->
@@ -244,7 +244,7 @@
                                     <div class="logo">
                                         <a href="{{url('/')}}"><img src="{{$rows->photo}}" alt="" title="" height="80" width="80"/></a>
                                     </div>
-                                    <div class="text text-justify">{{substr($rows->about,0,400).'...'}}</div>
+                                    <div class="text text-justify">{{substr($rows->about,0,250).'...'}}</div>
                                     <ul class="social-icon-one">
                                         <li><a href="https://www.facebook.com/SobujBariBD" target="_blank"><span class="fa fa-facebook-f"></span></a></li>
                                         <li><a href="https://www.youtube.com/channel/UCUH44qwSaI-r7hhvIq8RH0A/videos" target="_blank"><span class="fa fa-youtube-play"></span></a></li>
@@ -260,6 +260,9 @@
                                         <h2>Services</h2>
                                     </div>
                                     <ul class="footer-lists">
+									@php 
+										$services = DB::table('services')->take(6)->get();
+									@endphp
                                         @foreach($services as $service)
                                             <li><a href="{{'service?cat='.$service->id}}">{{$service->title}}</a></li>
                                         @endforeach
@@ -319,6 +322,33 @@
             </div>
 
         </div>
+		<!-- Messenger Chat Plugin Code -->
+		<div id="fb-root"></div>
+
+		<!-- Your Chat Plugin code -->
+		<div id="fb-customer-chat" class="fb-customerchat">
+		</div>
+
+		<script>
+		  var chatbox = document.getElementById('fb-customer-chat');
+		  chatbox.setAttribute("page_id", "2066754733377349");
+		  chatbox.setAttribute("attribution", "biz_inbox");
+
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  xfbml            : true,
+			  version          : 'v11.0'
+			});
+		  };
+
+		  (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+    </script>
         <!--Footer Bottom-->
         <div class="footer-bottom">
             <div class="auto-container">

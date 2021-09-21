@@ -53,4 +53,16 @@ if(Cookie::get('role') != null){
     Route::post('getUsersById' , 'SettingController@getUsersById');
     Route::post('deleteUserList' , 'SettingController@deleteUserList');
     Route::get('receivedEmail' , 'SettingController@receivedEmail');
+    //my_acc_personal
+    Route::get('project_name', 'AuthController@project_name');
+    Route::post('insertProjectName', 'AuthController@insertProjectName');
+    Route::post('getProjectNameById', 'AuthController@getProjectNameById');
+    Route::post('deleteProjectName', 'AuthController@deleteProjectName');
+    Route::get('m_acc', 'AuthController@m_acc');
+    Route::get('getAllCompany', 'AuthController@getAllCompany');
+    Route::get('getAllProject', 'AuthController@getAllProject');
+    Route::post('insertM_acc', 'AuthController@insertM_acc');
+    Route::post('getM_accReportByDate', 'AuthController@getM_accReportByDate');
+    Route::post('getM_accListById', 'AuthController@getM_accListById');
 }
+

@@ -1,5 +1,5 @@
 @extends('website.layout')
-@section('title', 'Home')
+@section('title', 'Home || Sobuj Bari')
 @section('hhh', 'current')
 @section('content')
     @php
@@ -22,7 +22,7 @@
         </div>
         <div class="contact-number"><span class="icon flaticon-phone-call"></span>Call Us: {{$rows->phone}}</div>
     </section>
-    <section class="success-section">
+    <section class="success-section" style="background-image:url(public/images/background/4.jpg)">
         <div class="auto-container">
             <div class="row clearfix">
 
@@ -166,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section class="services-section-two" style="background-image:url(images/background/4.jpg)">
+    <section class="services-section-two" style="background-image:url(public/images/background/4.jpg)">
         <div class="auto-container">
             <div class="sec-title centered">
                 <div class="title">Services We Offer & Solutions</div>
@@ -190,7 +190,7 @@
             </div>
         </div>
     </section>
-    <section class="project-section">
+    <section class="project-section" style="background-color:url(/images/background/1.jpg);">
         <div class="auto-container">
             <div class="sec-title centered">
                 <div class="title">Our Best Works</div>
@@ -325,7 +325,7 @@
             </div>
         </div>
         <!--Map Section-->
-        <div class="auto-container">
+        <div class="auto-container" style="background-image:url(public/images/background/1.jpg)">
             <div class="inner-container">
                 <div class="row clearfix">
                     <!--Info Column-->
